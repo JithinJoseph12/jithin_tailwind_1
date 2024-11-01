@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css_link -->
+     <link rel="stylesheet" href="./style.css">
+     <!-- tailwind  cdn -->
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- font-AWESOME_CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="./tailwind.config.css">
+     <!-- google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pacifico&family=Smooch&family=Unlock&display=swap" rel="stylesheet">
+     <!-- aos link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- animate -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <!-- navbar -->
+    <section>
+        <div id="home" class="min-h-screen bg-[url('/images/bg_2.png')] bg-center bg-cover xl:rounded-bl-[290px]">
+          <nav class="bg-white">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 h-[100px]">
+              <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                  <!-- Mobile menu button-->
+                  <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <!-- Menu Icons -->
+                    <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                  <div class="flex flex-shrink-0 items-center">
+                    <img class="bg-[#cb9c70] w-[63px] h-[63px] rounded-full  h-20 w-auto mr-8 " src="./images/logo_final.png" alt="Your Company">
+                  </div>
+                  <div class="mt-8 hidden sm:ml-6 sm:block">
+                    <div class="flex space-x-4">
+                      <!-- Nav Links -->
+                      <a href="#home" class="nav rounded-md px-3 py-2 text-base font-medium text-black hover:bg-gray-700 hover:text-white">Home</a>
+                      <a href="#about" class="nav  rounded-md px-3 py-2 text-base font-medium text-black hover:bg-gray-700 hover:text-white">About Us</a>
+                      <a href="#brand" class="nav rounded-md px-3 py-2 text-base font-medium text-black hover:bg-gray-700 hover:text-white">Brands</a>
+                      <a href="#project" class="nav rounded-md px-3 py-2 text-base font-medium text-black hover:bg-gray-700 hover:text-white">Projects</a>
+                      <a href="#article" class="nav rounded-md px-3 py-2 text-base font-medium text-black hover:bg-gray-700 hover:text-white">Articles</a>
+                      <a href="#contact" class="nav rounded-md px-3 py-2 text-base font-medium text-black hover:bg-gray-700 hover:text-white">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                  <button type="button" class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                    <span class="sr-only">View notifications</span>
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                    </svg>
+                  </button>
+      
+                  <div class="relative ml-3">
+                    <button type="button" class="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                      <span class="sr-only">Open user menu</span>
+                      <img class="h-8 w-8 rounded-full" src="./images/home_logo.png" alt="">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Profile dropdown -->
+              <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem">Your Profile</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem">Settings</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem">Sign out</a>
+              </div>
+            </div>
+          </nav>
+      
+          <div class="sm:hidden" id="mobile-menu">
+            <div class="space-y-1 px-2 pb-3 pt-2">
+              <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-black hover:bg-gray-700 hover:text-white">Home</a>
+              <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-black  hover:bg-gray-700 hover:text-white">About Us</a>
+              <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-black  hover:bg-gray-700 hover:text-white">Brands</a>
+              <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-black  hover:bg-gray-700 hover:text-white">Projects</a>
+            </div>
+          </div>
+      
+          <div class="pt-16 leading-9 flex flex-col mt-12 ml-4 sm:mt-24 sm:ml-24 w-full sm:w-[567px] items-center text-center xl:text-left lg:items-start">
+            <h1 class="home_head text-3xl sm:text-5xl font-bold">Design a Space That Reflects <span class="animate__animated animate__heartBeat">You ...</span></h1>
+            <p class="home_text text-sm sm:text-base mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos saepe ipsum reiciendis animi. Accusamus recusandae alias, eius optio maxime vitae odio nemo quidem dicta laborum quasi error velit? Esse, eum.</p>
+            <button class="mt-4 btn text-white bg-black py-2 px-4 sm:px-5 rounded-xl hover:bg-transparent hover:text-black hover:border hover:border-black duration-300">GET FREE ESTIMATION</button>
+          </div>
+        </div>
+      </section>
+      
+<!-- about -->
+<section id="about" class="about mt-[80px] xl:mt-[200px] relative z-20">
+    <div class="container mx-auto px-6 lg:px-12 xl:px-20">
+      <div class="flex flex-col xl:flex-row justify-center items-center gap-8 xl:gap-[74px] pb-4">
+        <!-- text -->
+        <div data-aos="fade-up" class=" flex-1 order-2 xl:order-none xl:max-w-[410px] flex flex-col text-center items-center xl:items-start gap-8 mr-auto px-4">
+          <h2 class="animate__animated animate__heartBeat about_text text-3xl font-bold pb-4">We Can Create The Art of Stylish Living Stylishly</h2>
+          <p class="leading-7">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, illum voluptatum. Labore assumenda est commodi iste. Consequuntur ipsam eos perspiciatis, ex repudiandae quisquam omnis amet cum quibusdam rem assumenda maiores. necessitatibus dolores maiores tempora illum eaque architecto, laudantium ad qui iure, reiciendis repellat aut! Accusamus, nihil debitis?
+          </p>
+        </div>
+        <!-- image -->
+        <div class="w-full about__img order-1 xl:order-none xl:max-w-[550px] mx-auto xl:ml-auto px-4">
+          <img data-aos="fade-up" class="rounded-tr-[150px] rounded-bl-[150px]" src="./images/about_img.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    
+    <!-- phone icon -->
+    <div data-aos="flip-left" class="mx-auto bg-[#d7b493] hover:bg-red-200 w-[93px] h-[93px] rounded-full flex justify-center items-center mt-4">
+      <div><i class="fa-solid fa-phone color-accent text-4xl"></i></div>
+    </div>
+  </section>
+  
+ <!-- brands -->
+  <section data-aos="fade-up" id="brand" class="hover:bg-[#d7b493] brands mt-[80px] xl:mt-[150px] relative z-20">
+    <div class="container  mx-auto">
+        <div class="flex flex-col xl:flex-row justify-between items-center">
+            <img class="brands__img" src="./images/brnd_1.png" alt="">
+            <img class="brands__img" src="./images/brnd_2.png" alt="">
+            <img class="brands__img" src="./images/brnd_3.png" alt="">
+            <img class="brands__img" src="./images/brnd_4.png" alt="">
+            <img class="brands__img" src="./images/brnd_5.png" alt="">
+        </div>
+    </div>
+  </section>
+  <!-- work -->
+   <section id="project" class="work mt-[80px] xl:mt-[150px] relative z-20">
+    <div class="container mx-auto xl;px-0">
+        <div>
+            <h2 class="work_text text-4xl font-bold text-center pb-12">Our Projects</h2>
+            <h2 class="animate__animated animate__heartBeat work_text_2 text-3xl font-bold text-center pb-12">Crafting Excellence in Every Project</h2>
+        </div>
+        <div data-aos="fade-up" class="work__grid grid grid-cols-1 xl:grid-cols-2 gap-x-[100px] gap-y-[50px] ">
+            <!-- item -->
+            <div class=" w-full max-w[548px] h-full mx-auto ">
+                <img class="h-[400px] w-[600px]  rounded-tr-[100px]" src="./images/hs.jpg" alt="">
+                <div class="flex justify-between  items-center w-full pt-6 ">
+                    <div>
+                        <h3 class="work_head text-3xl font-bold">Modern Living Room</h3>
+                        <p class="txt">Decor/Architecture</p>
+                    </div>
+                    <button class=" bg-red-100 w-[50px] h-[50px] rounded-full hover:bg-red-200">
+                        <i class="fa-solid fa-greater-than text-1xl"></i>
+                    </button>
+                </div>
+                
+            </div>
+
+            <!-- item -->
+            <div data-aos="fade-up" class="w-full max-w[548px] h-full mx-auto ">
+                <img class="h-[400px] w-[600px] rounded-tl-[100px]" src="./images/dinnin hall.jpg" alt="">
+                <div class="flex justify-between  items-center w-full pt-6">
+                    <div>
+                        <h3 class="work_head text-3xl font-bold">Modern Kitchen</h3>
+                        <p  class="txt">Decor/Architecture</p>
+                    </div>
+                    <button class=" bg-red-100 w-[50px] h-[50px] rounded-full hover:bg-red-200">
+                        <i class="fa-solid fa-greater-than text-1xl"></i>
+                    </button>
+                </div>
+                
+            </div>
+
+            <!-- item -->
+            <div data-aos="fade-up" class="w-full max-w[548px] h-full mx-auto ">
+                <img class="h-[400px] w-[600px] rounded-br-[100px]" src="./images/hall.jpg" alt="">
+                <div class="flex justify-between  items-center w-full pt-6">
+                    <div>
+                        <h3 class="work_head text-3xl font-bold">Modern Hall</h3>
+                        <p  class="txt">Decor/Architecture</p>
+                    </div>
+                    <button class=" bg-red-100 w-[50px] h-[50px] rounded-full hover:bg-red-200">
+                        <i class="fa-solid fa-greater-than text-1xl"></i>
+                    </button>
+                </div>
+                
+            </div>
+
+            <!-- item -->
+            <div data-aos="fade-up" class="w-full max-w[548px] h-full mx-auto ">
+                <img class="h-[400px] w-[600px] rounded-bl-[100px]" src="./images/hall_2.jpg" alt="">
+                <div class="flex justify-between  items-center w-full pt-6">
+                    <div>
+                        <h3 class="work_head text-3xl font-bold">Modern Bedroom</h3>
+                        <p  class="txt">Decor/Architecture</p>
+                    </div>
+                    <button class=" bg-red-100 w-[50px] h-[50px] rounded-full hover:bg-red-200">
+                        <i class="fa-solid fa-greater-than text-1xl"></i>
+                    </button>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+   </section>
+    <!-- our past -->
+      <!-- Our Past Section -->
+    <section class="brands mt-[80px] xl:mt-[150px] relative z-20 py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="past_text text-5xl font-bold text-center text-[#d7b493] mb-12">Our Past</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Projcts Done -->
+                <div class="flex flex-col items-center text-center p-6 group">
+                    <div class="text-6xl text-[#d7b493] mb-4">
+                        <i data-aos="flip-left" class="fas fa-briefcase transition-colors duration-300 group-hover:text-[#b59878]"></i>
+                    </div>
+                    <p class="text-3xl mb-7 font-semibold text-gray-900 ">100</p>
+                    <p class="past_2 text-sm text-gray-600">Projects Done</p>
+                </div>
+
+                <!--  Consultations Offered -->
+                <div class="flex flex-col items-center text-center p-6 group">
+                    <div class="text-6xl text-[#d7b493] mb-4">
+                        <i data-aos="flip-left" class="fas fa-headset transition-colors duration-300 group-hover:text-[#b59878]"></i>
+                    </div>
+                    <p class="text-3xl mb-7 font-semibold text-gray-900">55</p>
+                    <p class="past_2 text-sm text-gray-600"> Consultations Offered</p>
+                </div>
+
+                <!-- Happy Clients -->
+                <div class="flex flex-col items-center text-center p-6 group">
+                    <div class="text-6xl text-[#d7b493] mb-4">
+                        <i data-aos="flip-left" class="fas fa-smile transition-colors duration-300 group-hover:text-[#b59878]"></i>
+                    </div>
+                    <p class="text-3xl mb-7 font-semibold text-gray-900">178</p>
+                    <p class="past_2 text-sm text-gray-600">Happy Clients</p>
+                </div>
+
+                <!-- Happy Employees -->
+                <div class="flex flex-col items-center text-center p-6 group">
+                    <div class="text-6xl text-[#d7b493] mb-4">
+                        <i data-aos="flip-left" class="fas fa-users transition-colors duration-300 group-hover:text-[#b59878]"></i>
+                    </div>
+                    <p class="text-3xl mb-7 font-semibold text-gray-900">50</p>
+                    <p class="past_2 text-sm text-gray-600">Happy Customers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- news -->
+     <section id="article" class="news brands mt-[80px] xl:mt-[150px] relative z-20">
+        <div class="container mx-auto px-0">
+            <div class="article_text h2 text-center font-bold text-4xl pb-12">Articles & News</div>
+            <h2 class="animate__animated animate__heartBeat article_text_2 h2 text-center font-bold text-3xl pb-12">Discover Insights & Stay Informed</h2>
+            <div class="news_grid grid grid-cols-1 xl:grid-cols-3 gap-[27px]">
+                      
+                <!-- item -->
+                <div class="news_item w-full max-w-[382px] h-[450px] border border-primary rounded-[62px] p-[15px] hover:bg-red-100  cursor-pointer mx-auto xl:mx-0">
+                    <img class="rounded-tl-[52px] rounded-tr-[52px] " src="./images/news_1.jpg" alt="">
+                    <div class="leading-10 flex flex-col">
+                        <h3 class=" article_text_3  text-2xl font-bold text-center pt-6">Make the aesthetic interior's</h3>
+                        <div class="flex  items-center justify-between px-3 pt-8">
+                            <p class="text-center font-semibold">22 June ,2024</p>
+                            <button class=" bg-red-100 w-[50px] h-[50px] rounded-full hover:bg-white">
+                                <i class="fa-solid fa-greater-than text-1xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="news_item w-full max-w-[382px] h-[450px] border border-primary rounded-[62px] p-[15px] hover:bg-red-100  cursor-pointer mx-auto xl:mx-0">
+                    <img class="rounded-tl-[52px] rounded-tr-[52px] " src="./images/news_2.jpg" alt="">
+                    <div class="leading-10 flex flex-col">
+                        <h3 class=" article_text_3  text-2xl font-bold text-center pt-6">Make the aesthetic interior's</h3>
+                        <div class="flex  items-center justify-between px-3 pt-8">
+                            <p class="text-center font-semibold">22 June ,2024</p>
+                            <button class=" bg-red-100 w-[50px] h-[50px] rounded-full hover:bg-white">
+                                <i class="fa-solid fa-greater-than text-1xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- item -->
+                <div class="news_item w-full max-w-[382px] h-[450px] border border-primary rounded-[62px] p-[15px] hover:bg-red-100  cursor-pointer mx-auto xl:mx-0">
+                    <img class=" rounded-tl-[52px] rounded-tr-[52px] " src="./images/news_3.jpg" alt="">
+                    <div class="leading-10 flex flex-col">
+                        <h3 class=" article_text_3  text-2xl font-bold text-center pt-6">Make the aesthetic interior's</h3>
+                        <div class="flex  items-center justify-between px-3 pt-8">
+                            <p class="text-center font-semibold">22 June ,2024</p>
+                            <button class=" bg-red-100 w-[50px] h-[50px] rounded-full hover:bg-white">
+                                <i class="fa-solid fa-greater-than text-1xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+     </section>
+     <!-- footer -->
+
+     <footer id="contact" class="brands mt-[80px] xl:mt-[150px] relative z-20 bg-[#d7b493] lg:grid lg:grid-cols-5">
+        <div class="relative block h-32 lg:col-span-2 lg:h-full">
+        <img src="./images/footer.jpg" alt="Event Management" class="absolute inset-0 h-full w-full object-cover"/>
+        </div>
+    
+        <div class="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+            <!-- About Us Section -->
+            <div>
+            <h2 class="foot_head text-xl font-bold text-gray-900">About Us</h2>
+            <p class="mt-4 text-sm text-gray-700">
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, accusantium laudantium! Et aut perspiciatis cum quasi sapiente animi accusamus at, explicabo rerum? Aperiam fugiat perferendis ad consectetur nesciunt, hic aliquam?
+               Sapiente nemo officia placeat rem excepturi minima vero sed esse deserunt optio voluptatem repellat, tempora nesciunt dolor laudantium, id numquam error totam, quibusdam molestias debitis. Enim libero sequi voluptatibus est.
+                
+            </p>
+            </div>
+    
+            <!-- Testimonials Section -->
+            <div>
+            <h2 class="foot_head text-xl font-bold text-gray-900">Testimonials</h2>
+            <ul class="mt-4 space-y-2 text-sm text-gray-700">
+                <li>"The team made our wedding day perfect. Highly recommended!" - Jane D.</li>
+                <li>"Exceptional service for our corporate event. Everything went smoothly." - John S.</li>
+            </ul>
+            </div>
+    
+            <!-- Contact Us -->
+            <div>
+            <h2 class="foot_head text-xl font-bold text-gray-900">Contact Us</h2>
+            <ul class="mt-4 space-y-2 text-sm text-gray-700">
+                <li>
+                <span class="text-[1rem] uppercase tracking-wide font-semibold  text-gray-500">Email :</span>
+                <a href="mailto:info@example.com" class="block text-xl font-medium text-gray-900 hover:opacity-75">
+                    interiorbeuty@gmail.com
+                </a>
+                </li>
+                <li>
+                <span class="text-[1rem] uppercase tracking-wide text-gray-500 font-semibold  ">Phone No :</span>
+                <a href="tel:+0123456789" class="block text-xl font-medium text-gray-900 hover:opacity-75">
+                    9876543456
+                </a>
+                </li>
+            </ul>
+            </div>
+    
+            <!-- Social Media-->
+            <div>
+            <h2 class="foot_head text-xl font-bold text-gray-900">Follow Us</h2>
+            <ul class="mt-4 flex gap-6">
+                <li>
+                <a href="https://www.facebook.com" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                    <span class="sr-only">Facebook</span>
+                    <i class="fab fa-facebook-f fa-lg"></i>
+                </a>
+                </li>
+                <li>
+                <a href="https://www.pinterest.com" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                    <span class="sr-only">Pinterest</span>
+                    <i class="fab fa-pinterest-p fa-lg"></i>
+                </a>
+                </li>
+                <li>
+                <a href="https://www.twitter.com" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                    <span class="sr-only">Twitter</span>
+                    <i class="fab fa-twitter fa-lg"></i>
+                </a>
+                </li>
+                <li>
+                <a href="https://www.instagram.com" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                    <span class="sr-only">Instagram</span>
+                    <i class="fab fa-instagram fa-lg"></i>
+                </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </footer>
+ 
+</body>
+<!-- aos -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</html>

@@ -1,0 +1,122 @@
+/*= Base Styles= */
+.brands__img {
+    height: 150px;
+}
+
+/* =Home Section= */
+.home_text {
+    font-weight: 600;
+    line-height: 30px;
+}
+.home_head {
+    font-family: "Unlock", serif;
+    line-height: 60px;
+}
+.home_head span {
+    color: rgb(68, 69, 68);
+}
+
+/* =Navigation= */
+.nav {
+    font-family: "Lora", serif;
+}
+
+/* =About Section= */
+.about_text {
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    line-height: 60px;
+}
+
+/*= Work Section= */
+.work_text {
+    font-family: "Merriweather", serif;
+    color: #cb9c70;
+}
+.work_text_2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+}
+.work_head {
+    font-family: "Merriweather", serif;
+}
+
+/* =Past Section= */
+.past_text, .past_2 {
+    font-family: "Merriweather", serif;
+}
+.past_2 {
+    font-size: large;
+}
+
+/* =Articles Section= */
+.article_text {
+    font-family: "Merriweather", serif;
+    color: #cb9c70;
+}
+.article_text_2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+}
+.article_text_3 {
+    font-family: "Lora", serif;
+}
+
+/* =Footer= */
+.foot_head {
+    font-family: "Lora", serif;
+}
+
+/*== Media Queries== */
+
+/* =Medium Screens= */
+@media (max-width: 1024px) {
+    .brands__img {
+        height: 120px;
+    }
+    .home_text {
+        line-height: 28px;
+    }
+    .home_head {
+        line-height: 50px;
+        font-size: 1.8rem;
+    }
+    .about_text, .work_text_2, .article_text_2 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .work_text {
+        font-size: 1rem;
+    }
+    .past_2, .article_text_3, .foot_head {
+        font-size: 1.2rem;
+    }
+}
+
+/* =Small Screens= */
+@media (max-width: 640px) {
+    .brands__img {
+        height: 100px;
+    }
+    .home_text {
+        font-size: 0.9rem;
+        line-height: 26px;
+    }
+    .home_head {
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+    .about_text, .work_text_2, .article_text_2 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .work_text, .past_text, .article_text {
+        font-size: 2rem;
+    }
+    .past_2, .article_text_3, .foot_head {
+        font-size: 1rem;
+    }
+    .txt {
+        font-size: 0.85rem;
+    }
+}
